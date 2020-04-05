@@ -1,0 +1,2 @@
+alert tcp $EXTERNAL_NET any -> $HOME_NET 3399 (content:"login/Initial; )
+alert tcp $EXTERNAL_NET any -> $HOME_NET 3399 (msg:"bot founded"; content:"IPv4Address:Port"; sid:10001;)
